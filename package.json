@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind": "tailwindcss -i ./src/css/styles.css -o ./dist/output.css"
+    "tailwind": "tailwindcss -i ./src/css/styles.css -o ./dist/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -19,9 +19,7 @@
   "homepage": "https://github.com/Gabrielzouad/Semester-project-2-SOLD#readme",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.8",
-    "autoprefixer": "^10.4.13",
     "daisyui": "^2.41.0",
-    "postcss": "^8.4.19",
     "tailwindcss": "^3.2.4"
   }
 }
