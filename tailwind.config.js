@@ -2,9 +2,12 @@
  
 */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./index.html", "./signIn.html"],
+  content: ["./src/**/*.{html,js}", "./index.html", "./signIn.html", "./signUp.html", "./shop.html", "./productpage.html"],
   theme: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [require("@tailwindcss/typography"), require("daisyui"), require("@tailwindcss/aspect-ratio")],
 };
