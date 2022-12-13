@@ -3,7 +3,9 @@
 ### installed dependencies
 
 Tailwind css
+DaisyUI
 
 ```
-npm install tailwindcss@latest
+npm install -D tailwindcss@latest
+npm install -D daisyui
 ```
