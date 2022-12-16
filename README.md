@@ -9,3 +9,9 @@ DaisyUI
 npm install -D tailwindcss@latest
 npm install -D daisyui
 ```
+
+### To run project locally
+
+```
+npm install
+```
