@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="dist/css/output.css">
 </head>
 <body>
-    <div class="bg-white relative overflow-hidden h-screen">
+    <div class="bg-white relative h-screen">
         <div class="hidden sm:absolute sm:inset-y-0 sm:block sm:h-full sm:w-full" aria-hidden="true">
           <div class="relative mx-auto h-full max-w-7xl"></div>
         </div>
@@ -24,25 +24,11 @@
                       <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
                     </a>
                     <div class="-mr-2 flex items-center md:hidden">
-                      <button
-                        type="button"
-                        class="inline-flex items-center justify-center rounded-md bg-gray-50 p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                        aria-expanded="false"
-                      >
-                        <span class="sr-only">Open main menu</span>
-                        <!-- Heroicon name: outline/bars-3 -->
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                      </button>
+                    
                     </div>
                   </div>
                 </div>
-                <div class="hidden md:flex md:space-x-10">
-                  <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Categories</a>
-                </div>
-                <div class="hidden md:flex md:space-x-10"><input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" /></div>
-                <div class="hidden md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end">
+                <div class="md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end">
                   <span class="inline-flex rounded-md shadow">
                     <a href="#" class="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-indigo-600 hover:bg-gray-50">Sign up</a>
                   </span>
@@ -50,84 +36,21 @@
               </nav>
             </div>
   
-            <!--
-                Mobile menu, show/hide based on menu open state.
-        
-                Entering: "duration-150 ease-out"
-                  From: "opacity-0 scale-95"
-                  To: "opacity-100 scale-100"
-                Leaving: "duration-100 ease-in"
-                  From: "opacity-100 scale-100"
-                  To: "opacity-0 scale-95"
-              -->
-            <div class="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden">
-              <div class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
-                <div class="flex items-center justify-between px-5 pt-4">
-                  <div>
-                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-                  </div>
-                  <div class="-mr-2">
-                    <button
-                      type="button"
-                      class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                    >
-                      <span class="sr-only">Close menu</span>
-                      <!-- Heroicon name: outline/x-mark -->
-                      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="px-2 pt-2 pb-3">
-                  <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Product</a>
-  
-                  <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Features</a>
-  
-                  <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Marketplace</a>
-  
-                  <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Company</a>
-                </div>
-                <a href="#" class="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100">Log in</a>
-              </div>
-            </div>
-          </div>
-          
   <div class="bg-white flex-none">
     <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-      <!-- Product details -->
       <div class="lg:max-w-lg lg:self-end">
-        <nav aria-label="Breadcrumb">
-          <ol role="list" class="flex items-center space-x-2">
-            <li>
-              <div class="flex items-center text-sm">
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Clothes and Cosmetics</a>
-                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" class="ml-2 h-5 w-5 flex-shrink-0 text-gray-300">
-                  <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
-                </svg>
-              </div>
-            </li>
-  
-            <li>
-              <div class="flex items-center text-sm">
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Bag</a>
-              </div>
-            </li>
-          </ol>
-        </nav>
-  
         <div class="mt-4">
-          <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Everyday Ruck Snack</h1>
+          <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl" id="itemHeader"></h1>
         </div>
-  
         <section aria-labelledby="information-heading" class="mt-4">
-          <h2 id="information-heading" class="sr-only">Product information</h2>
-  
           <div class="flex items-center">
-            <p class="text-lg text-gray-900 sm:text-xl">$220</p>
+            <p class="text-lg text-gray-900 sm:text-xl" id="itemCurrentBid"></p>
           </div>
           <div class="mt-4 space-y-6">
-            <p class="text-base text-gray-500">Don&#039;t compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.</p>
+            <p class="text-base text-gray-500" id="itemDescription"></p>
+          </div>
+          <div>
+            <p class="text-base" id="itemTimeLeft"></p>
           </div>
   
         </section>
@@ -135,18 +58,20 @@
   
       <!-- Product image -->
       <div class="mt-10 lg:col-start-2 lg:row-span-2 lg:mt-0 lg:self-center">
-        <div class="aspect-w-1 aspect-h-1 rounded-lg">
-          <img src="https://tailwindui.com/img/ecommerce-images/product-page-04-featured-product-shot.jpg" alt="Model wearing light green backpack with black canvas straps and front zipper pouch." class="h-full w-full object-cover object-center">
+        <div class="aspect-w-1 aspect-h-1 rounded-lg" id="itemImageContainer">
+          <img  src="" class="h-full w-full object-cover object-center">
         </div>
       </div>
   
       <!-- Product form -->
       <div class="mt-10 lg:col-start-1 lg:row-start-2 lg:max-w-lg lg:self-start">
-          <form>
-            <div class="mt-10">
-              <button type="submit" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50">Add to bag</button>
+            <div>
+              <label for="bid-amount" class="sr-only">Amount you want to bid</label>
+              <input id="bid-amount" name="amount" required class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="bid amount">
             </div>
-          </form>
+            <div class="mt-10">
+              <button id="addBiddingButton" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50">Add bidding</button>
+            </div>
       </div>
     </div>
   </div>
@@ -217,6 +142,6 @@
       <p class="mt-8 text-center text-base text-gray-400">&copy; 2020 Your Company, Inc. All rights reserved.</p>
     </div>
   </footer>
-  
+  <script type="module" src="src/js/items/detaileditem.js"></script>
 </body>
 </html>
