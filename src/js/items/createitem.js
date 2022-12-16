@@ -11,9 +11,11 @@ async function handleSubmit(event) {
     const postUserToApi = await fetch(apiUrl + "/auction/listings", options, {
       method: "POST",
       body: JSON.stringify({
-        title: createTitle.value, // RequiredS
-        body: createBody.value, // Required
+        title: createTitle.value, // Required
+        description: createBody.value, // Optional
+        tags: createTag.value, // Optional
         media: createImage.value, // Optional
+        endsAt: endTime, // Required
       }),
     });
     const response = await postUserToApi.json();
