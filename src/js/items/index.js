@@ -1,10 +1,6 @@
 import { apiUrl } from "../api/parameter.mjs";
 
 const bearerToken = localStorage.getItem("accessToken");
-const profileNameDOM = document.getElementById("profileName");
-const profileImageDOM = document.getElementById("profileImage");
-const changeImageButton = document.getElementById("changeImage");
-const signOutUserButton = document.getElementById("signOutUser");
 
 const options = {
   headers: { Authorization: "bearer" + " " + bearerToken },
@@ -41,11 +37,3 @@ if (bearerToken !== null) {
                 </span>`;
   }
 }
-
-function userSignOut() {
-  localStorage.removeItem("userName");
-  localStorage.removeItem("bearerToken");
-  window.location.href = "index.html";
-}
-
-signOutUserButton.addEventListener("click", userSignOut());

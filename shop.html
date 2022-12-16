@@ -9,9 +9,7 @@
 </head>
 <body>
     <div class="bg-white relative h-screen">
-        <div class="hidden sm:absolute sm:inset-y-0 sm:block sm:h-full sm:w-full" aria-hidden="true">
-          <div class="relative mx-auto h-full max-w-7xl"></div>
-        </div>
+       
   
         <div class="relative pt-6 pb-16 sm:pb-24">
           <div>
@@ -30,7 +28,7 @@
                         aria-expanded="false"
                       >
                         <span class="sr-only">Open main menu</span>
-                        <!-- Heroicon name: outline/bars-3 -->
+      
                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
@@ -47,57 +45,37 @@
                 </div>
               </nav>
             </div>
-  
-            <!--
-                Mobile menu, show/hide based on menu open state.
-        
-                Entering: "duration-150 ease-out"
-                  From: "opacity-0 scale-95"
-                  To: "opacity-100 scale-100"
-                Leaving: "duration-100 ease-in"
-                  From: "opacity-100 scale-100"
-                  To: "opacity-0 scale-95"
-              -->
-            <div class="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden">
-              <div class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
-                <div class="flex items-center justify-between px-5 pt-4">
-                  <div>
-                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-                  </div>
-                  <div class="-mr-2">
-                    <button
-                      type="button"
-                      class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                    >
-                      <span class="sr-only">Close menu</span>
-                      <!-- Heroicon name: outline/x-mark -->
-                      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="px-2 pt-2 pb-3">
-                  <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Product</a>
-  
-                  <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Features</a>
-  
-                  <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Marketplace</a>
-  
-                  <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Company</a>
-                </div>
-                <a href="#" class="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100">Log in</a>
-              </div>
-            </div>
           </div>
+        </div>
+        <nav class="mx-auto max-w-lg flex items-center justify-between border-t border-gray-200 px-4 sm:px-0">
+          <div class="-mt-px flex w-0 flex-1">
+            <a href="#" id="prev-button" class="inline-flex items-center border-t-2 border-transparent pt-4 pr-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+              <svg class="mr-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M18 10a.75.75 0 01-.75.75H4.66l2.1 1.95a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 111.02 1.1l-2.1 1.95h12.59A.75.75 0 0118 10z" clip-rule="evenodd" />
+              </svg>
+              Previous
+            </a>
+          </div>
+         
+          <div class="-mt-px flex w-0 justify-end">
+            <a href="#" id="next-button" class="inline-flex items-center border-t-2 border-transparent pt-4 pl-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+              Next
+              <svg class="ml-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </nav>
 
-      <div class="bg-white">
-        <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div class="bg-white relative">
+        <div class="mx-auto  max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
           <h2 class="sr-only">Products</h2>
           <div id="listings" class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
             
           </div>
+          
       </div>
+      
 <script type="module" src="src/js/items/loaditems.js"></script>
 
 </body>

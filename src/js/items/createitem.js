@@ -1,29 +1,41 @@
 import { apiUrl } from "../api/parameter.mjs";
 const bearerToken = localStorage.getItem("accessToken");
-const options = {
-  headers: { Authorization: "bearer" + "" + bearerToken },
-};
+const itemNameInputDOM = document.getElementById("itemNameInput");
+const descriptionInputDOM = document.getElementById("descriptionInput");
+const categoryNameInputDOM = document.getElementById("categoryInput");
+const imageInputDOM = document.getElementById("imageInput");
+const timeInputDOM = document.getElementById("timeInput");
+const createListingButtonDOM = document.getElementById("createListingButton");
 
-async function handleSubmit(event) {
-  console.log(createTitle.value, createBody.value);
-  event.preventDefault();
-  try {
-    const postUserToApi = await fetch(apiUrl + "/auction/listings", options, {
-      method: "POST",
-      body: JSON.stringify({
-        title: createTitle.value, // Required
-        description: createBody.value, // Optional
-        tags: createTag.value, // Optional
-        media: createImage.value, // Optional
-        endsAt: endTime, // Required
-      }),
-    });
-    const response = await postUserToApi.json();
-    console.log(response);
-    window.location.reload(false);
-  } catch (e) {
-    console.log(e);
+async function handleSubmit(e) {
+  e.preventDefault();
+  if (itemNameInputDOM.value && timeInputDOM.value) {
+    try {
+      const newListing = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `bearer ${bearerToken}`,
+        },
+        body: JSON.stringify({
+          title: itemNameInputDOM.value, // Required
+          description: descriptionInputDOM.value, // Optional
+          tags: [categoryNameInputDOM.value], // Optional
+          media: [imageInputDOM.value], // Required
+          endsAt: timeInputDOM.value, // Required
+        }),
+      };
+
+      const postListing = await fetch(apiUrl + "/auction/listings", newListing);
+      return postListing;
+    } catch (e) {
+      console.log(e);
+    }
+  } else {
+    console.log("error");
   }
 }
 
-createButtonDOM.addEventListener("click", handleSubmit);
+createListingButtonDOM.addEventListener("click", (e) => {
+  handleSubmit(e);
+});

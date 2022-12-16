@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="corporate">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage for Sold!</title>
+    <link rel="stylesheet" href="dist/css/output.css" />
+  </head>
+  <body>
+    <div class="relative h-screen">
+      <div class="hidden sm:absolute sm:inset-y-0 sm:block sm:h-full sm:w-full" aria-hidden="true">
+        <div class="relative mx-auto h-full max-w-7xl"></div>
+      </div>
+
+      <div class="relative pt-6 pb-16 sm:pb-24">
+        <div>
+          <div class="mx-auto max-w-7xl px-4 sm:px-6">
+            <nav class="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
+              <div class="flex flex-1 items-center md:absolute md:inset-y-0 md:left-0">
+                <div class="flex w-full items-center justify-between md:w-auto">
+                  <a href="#">
+                    <span class="sr-only">Your Company</span>
+                    <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div id="avatarIcon" class="md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end">
+                <span class="inline-flex rounded-md shadow">
+                  <a href="signUp.html" class="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-indigo-600 hover:bg-gray-50">Sign up</a>
+                </span>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <main class="bg-white flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+          <div class="w-full max-w-md space-y-8">
+            <div>
+              <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company" />
+              <h2 id="profileName" class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900"></h2>
+            </div>
+            <form class="mt-8 space-y-6">
+              <input type="hidden" name="remember" value="true" />
+              <div class="-space-y-px rounded-md shadow-sm">
+                <div>
+                  <h2 class="">Enter your picture URL</h2>
+                </div>
+                <div>
+                  <label for="profileImage" class="sr-only">profile image</label>
+                  <input
+                    id="profileImage"
+                    name="profileImage"
+                    type="text"
+                    class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <button
+                  type="submit"
+                  id="changeImage"
+                  class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                >
+                  Change profile picture
+                </button>
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  id="signOutUser"
+                  class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-500 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                >
+                  Sign me out
+                </button>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="src/js/items/index.js"></script>
+  </body>
+</html>
